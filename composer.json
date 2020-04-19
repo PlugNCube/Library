@@ -2,7 +2,7 @@
     "name": "apply/library",
     "description": "Modules library",
     "type": "library",
-    "license": "MTI",
+    "license": "MIT",
     "homepage": "https://github.com/PlugNCube/Library",
     "minimum-stability": "dev",
     "require": {},
