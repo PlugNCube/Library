@@ -1,0 +1,20 @@
+{
+    "name": "apply/library",
+    "description": "Modules library",
+    "type": "library",
+    "license": "MTI",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Apply\\Library\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Apply\\Library\\Providers\\LibraryCoreServiceProvider"
+            ]
+        }
+    }
+}

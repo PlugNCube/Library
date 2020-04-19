@@ -1,0 +1,12 @@
+{
+    "id": "$UUID$",
+    "name": "$NAME$",
+    "display_name": "$PACKAGE$",
+    "alias": null,
+    "description": "$PACKAGE$ Description",
+    "type": "$DRIVER$",
+    "namespace": "$DRIVERSPACE$\\$PACKAGE$",
+    "core": 0,
+    "active": 1,
+    "order": 0
+}
