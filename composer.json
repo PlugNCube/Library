@@ -3,6 +3,7 @@
     "description": "Modules library",
     "type": "library",
     "license": "MTI",
+    "homepage": "https://github.com/PlugNCube/Library",
     "minimum-stability": "dev",
     "require": {},
     "autoload": {
