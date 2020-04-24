@@ -6,7 +6,7 @@ use Apply\Library\Support\Stub;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
 
-class Cube extends Plug
+class Cube extends Plugin
 {
     /**
      * Generate the package.

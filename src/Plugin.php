@@ -10,7 +10,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Traits\Macroable;
 use JsonSerializable;
 
-class Plug implements Arrayable, ArrayAccess, Jsonable, JsonSerializable, UrlRoutable
+class Plugin implements Arrayable, ArrayAccess, Jsonable, JsonSerializable, UrlRoutable
 {
     use Macroable;
     use Concerns\HasDriver,

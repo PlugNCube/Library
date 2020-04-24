@@ -37,7 +37,6 @@ trait HasGenerate
         //Packages;  Base namespace
         $driverSpace = $this->config('namespace');
 
-
         $uuid = (string) Str::uuid();
         $date = date('Y-m-d');
 

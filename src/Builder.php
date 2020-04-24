@@ -16,7 +16,7 @@ class Builder
     /**
      * The model being queried.
      *
-     * @var Plug
+     * @var Plugin
      */
     protected $item;
 
@@ -34,10 +34,10 @@ class Builder
     /**
      * Set a item instance for the item being queried.
      *
-     * @param Plug $item
+     * @param Plugin $item
      * @return $this
      */
-    public function setModel(Plug $item)
+    public function setModel(Plugin $item)
     {
         $this->item = $item;
         return $this;

@@ -28,8 +28,7 @@ class ElementMake extends Command
      */
     public function handle()
     {
-
-        $cube = $this->option('type') ?? 'plug';
+        $cube = $this->option('type') ?? config('library.element');
 
         $module = library()->generate($this->argument('name'), $cube);
 

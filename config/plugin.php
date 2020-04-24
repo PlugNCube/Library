@@ -4,48 +4,48 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Packages namespace
+    | Plugins namespace
     |--------------------------------------------------------------------------
     |
-    | This is the default namespace for the packages
+    | This is the default namespace for the plugins
     |
     */
-    'namespace' => 'Packages',
+    'namespace' => 'Plugins',
 
 
     /*
     |--------------------------------------------------------------------------
-    | Packages alias
+    | Plugins alias
     |--------------------------------------------------------------------------
     |
     | This is the default alias for the packages
     |
     */
 
-    'alias'     => 'package',
+    'alias'     => 'plugin',
 
     /*
     |--------------------------------------------------------------------------
-    | Packages vendor if use composer require or install
+    | Plugins vendor if use composer require or install
     |--------------------------------------------------------------------------
     |
-    | This is the default vendor for the packages
+    | This is the default vendor for the plugin
     |  -> path/vendor/name
     |
     */
 
-    'vendor'     => 'packages',
+    'vendor'     => 'plugins',
 
     /*
     |--------------------------------------------------------------------------
-    | Packages path
+    | POl path
     |--------------------------------------------------------------------------
     |
-    | This path used for save the generated module. This path also will added
+    | This path used for save the generated plugin. This path also will added
     | automatically to list of scanned folders.
     |
     */
-    'path'  => lib_path('packages'),
+    'path'  => lib_path('plugins'),
 
     /*
     |--------------------------------------------------------------------------

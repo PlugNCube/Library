@@ -18,7 +18,7 @@ class LibraryCoreServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(realpath(LIBRARY_PATH . '/config/library.php'), 'library');
         Helper::autoload(realpath(LIBRARY_PATH . '/helpers'));
-        $this->mergeConfigFrom(realpath(LIBRARY_PATH . '/config/plug.php'), 'plug');
+        $this->mergeConfigFrom(realpath(LIBRARY_PATH . '/config/plugin.php'), 'plugin');
         $this->mergeConfigFrom(realpath(LIBRARY_PATH . '/config/cube.php'), 'cube');
 
         $this->app->register(LibraryServiceProvider::class);

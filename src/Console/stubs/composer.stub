@@ -14,5 +14,10 @@
         "psr-4": {
             "$DRIVERSPACE$\\$PACKAGE$\\": "src/"
         }
+    },
+    "extra": {
+        "apply": {
+            "vendor": "$COLLECTION$/$NAME$"
+        }
     }
 }

@@ -4,7 +4,7 @@ namespace Apply\Library\Providers;
 
 use Apply\Library\Cube;
 use Apply\Library\Engine;
-use Apply\Library\Plug;
+use Apply\Library\Plugin;
 use Carbon\Laravel\ServiceProvider;
 
 class PlugServiceProvider extends ServiceProvider
@@ -26,7 +26,7 @@ class PlugServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        Engine::cube('plug', new  Plug());
+        Engine::cube('plugin', new  Plugin());
         Engine::cube('cube', new Cube());
     }
 

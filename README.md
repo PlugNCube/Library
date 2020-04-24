@@ -16,5 +16,10 @@ To get started with Apply Library, simply run:
 
 Generate a Package, from your console, execute the `php artisan make:element <name>` command.
 
+## License
+
+Apply library is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
 ## Plug & Cube
+
 

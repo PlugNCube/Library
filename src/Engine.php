@@ -46,7 +46,7 @@ class Engine
      */
     public static function element()
     {
-        return static::$cubes['plug']->setLibrary(true);;
+        return static::$cubes[config('library.element')]->setLibrary(true);;
     }
 
     /**
@@ -59,7 +59,7 @@ class Engine
     public static function cube($name, $cube = null)
     {
         if(!$cube){
-            $name = $name ?? 'plug';
+            $name = $name ?? config('library.element');
             return static::$cubes[$name];
         }
 
@@ -76,7 +76,7 @@ class Engine
     public static function run(Application $app)
     {
         static::load();
-        $load = new Plug();
+        $load = new Plugin();
         $load->setLibrary(true);
 
         $elements = $load->read()->filter(function ($item) {
@@ -123,7 +123,7 @@ class Engine
      * @param string $type
      * @return mixed
      */
-    public function generate($name, $type = 'plug')
+    public function generate($name, $type = 'plugin')
     {
         return  static::$cubes[$type]->generate($name);
     }
