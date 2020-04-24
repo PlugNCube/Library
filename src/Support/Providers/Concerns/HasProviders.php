@@ -10,7 +10,7 @@ trait HasProviders
     public function registerProviders(): self
     {
         foreach ($this->provides() as $provide) {
-            $this->app->register($provide);
+            $this->app->register(new $provide($this));
         }
 
         return $this;

@@ -4,7 +4,7 @@ namespace Apply\Library\Support\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class LoaderServiceProvider extends ServiceProvider
+class SetupServiceProvider extends ServiceProvider
 {
     use Concerns\HasItem,
         Concerns\HasAlias,

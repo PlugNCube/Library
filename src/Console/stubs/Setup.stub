@@ -1,19 +1,19 @@
 <?php
 
-namespace $NAMESPACE$\Setup;
+namespace $NAMESPACE$\Apply;
 
 use $NAMESPACE$\Providers\AppServiceProvider;
 use $NAMESPACE$\Providers\RouteServiceProvider;
-use Apply\Library\Support\Providers\LoaderServiceProvider;
+use Apply\Library\Support\Providers\SetupServiceProvider;
 
-class Loader extends LoaderServiceProvider
+class Setup extends SetupServiceProvider
 {
     /**
      * Bootstrap any Library services.
      *
      * @return void
      */
-    public function boot()
+    public function register()
     {
         $this
             ->registerProviders()

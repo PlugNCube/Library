@@ -61,7 +61,7 @@ return [
             'apply'                 => 'apply.json',
             'license'               => 'LICENCE.md',
             'composer'              => 'composer.json',
-            'loader'                => 'src/Setup/loader.php',
+            'setup'                => 'src/Apply/Setup.php',
             'RouteServiceProvider'  => 'src/Providers/RouteServiceProvider.php',
             'AppServiceProvider'    => 'src/Providers/AppServiceProvider.php',
             'Controller'            => 'src/Http/Controllers/Controller.php',

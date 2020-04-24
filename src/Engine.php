@@ -95,7 +95,7 @@ class Engine
 
         foreach ($elements as $element)
         {
-            $method = $element->namespace('Setup\Loader');
+            $method = $element->namespace('Apply\Setup');
             $app->register(new $method($app, $element));
         }
     }
