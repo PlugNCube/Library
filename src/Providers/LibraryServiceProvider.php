@@ -15,7 +15,9 @@ use Apply\Library\Console\Generators\ProviderMakeCommand;
 use Apply\Library\Console\Generators\RequestMakeCommand;
 use Apply\Library\Console\Generators\ResourceMakeCommand;
 use Apply\Library\Console\Generators\SeederMakeCommand;
+use Apply\Library\Cube;
 use Apply\Library\Http\Controllers\AssetsController;
+use Apply\Library\Plugin;
 use Illuminate\Support\ServiceProvider;
 
 class LibraryServiceProvider extends ServiceProvider
@@ -27,6 +29,7 @@ class LibraryServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->registerAutoload();
         $this->registerAssets();
     }
 
@@ -37,9 +40,20 @@ class LibraryServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->registerDefaultCubes();
         $this->registerCommands();
         $this->makeDirectory();
-        $this->registerAutoload();
+    }
+
+    /**
+     * Register default cubes for the Library´s.
+     *
+     * @return void
+     */
+    public function registerDefaultCubes()
+    {
+        library()->cube('plugin', new  Plugin());
+        library()->cube('cube', new Cube());
     }
 
     /**

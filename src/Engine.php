@@ -9,7 +9,7 @@ use Illuminate\Foundation\Application;
 class Engine
 {
     /**
-     * All of the registered Library tool elements.
+     * All of the registered Library cubes.
      *
      * @var array
      */
@@ -23,14 +23,14 @@ class Engine
     public static $elements = [];
 
     /**
-     * Check if read PlugLoad
+     * Check if read PluginLoad
      *
      * $read boolean.
      */
     public static $read = false;
 
     /**
-     * Get all of the additional elements that should be registered.
+     * Get all elements.
      *
      * @return array
      */
@@ -40,7 +40,7 @@ class Engine
     }
 
     /**
-     * Get all elements force.
+     * Get default element force.
      *
      * @return array
      */
@@ -50,7 +50,7 @@ class Engine
     }
 
     /**
-     * Register the given script file with Nova.
+     * Register the given cube with library.
      *
      * @param $name
      * @param $cube
@@ -70,13 +70,13 @@ class Engine
 
     /**
      * Run library engine
+     *
      * @param Application $app
      * @return string
      */
     public static function run(Application $app)
     {
-        $load = new Plugin();
-        $load->setLibrary(true);
+        $load = static::element();
 
         $elements = $load->read()->filter(function ($item) {
                 return $item->active == true;
