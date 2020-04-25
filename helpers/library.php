@@ -15,14 +15,13 @@ if (! function_exists('lib_path')) {
 
 if (! function_exists('library')) {
     /**
-     * Get / set the specified package value.
-     *
-     * If an array is passed as the key, we will assume you want to set an array of values.
+     * Get the available Library engine instance.
      *
      * @return mixed
      */
     function library()
     {
+        app();
         return new \Apply\Library\Engine();
     }
 }
