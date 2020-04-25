@@ -32,8 +32,7 @@ class SplFileInfo extends \SplFileInfo
      */
     public function getJsonDecode($assoc = true)
     {
-        $content= json_decode($this->getContents(), $assoc);
-        return $content;
+        return json_decode($this->getContents(), $assoc);
     }
 
     /**

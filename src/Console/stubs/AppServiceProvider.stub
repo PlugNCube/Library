@@ -2,7 +2,7 @@
 
 namespace $NAMESPACE$\Providers;
 
-use Illuminate\Support\ServiceProvider;
+use Apply\Library\Support\Providers\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
