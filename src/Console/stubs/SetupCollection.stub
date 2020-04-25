@@ -1,14 +1,14 @@
 <?php
 
-namespace $NAMESPACE$\Setup;
+namespace $NAMESPACE$\Apply;
 
 use Apply\Library\Engine;
 use $NAMESPACE$\Providers\AppServiceProvider;
 use $NAMESPACE$\Providers\RouteServiceProvider;
-use Apply\Library\Support\Providers\LoaderServiceProvider;
+use Apply\Library\Support\Providers\SetupServiceProvider;
 use $NAMESPACE$\$PACKAGE$;
 
-class Loader extends LoaderServiceProvider
+class Setup extends SetupServiceProvider
 {
     /**
      * Bootstrap any Library services.

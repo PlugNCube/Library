@@ -14,6 +14,30 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Plugins alias
+    |--------------------------------------------------------------------------
+    |
+    | This is the default alias for the packages
+    |
+    */
+
+    'alias'     => 'cube',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Plugins vendor if use composer require or install
+    |--------------------------------------------------------------------------
+    |
+    | This is the default vendor for the plugin
+    |  -> path/vendor/name
+    |
+    */
+
+    'vendor'     => 'plugins',
+
+
+    /*
+    |--------------------------------------------------------------------------
     | Collections path
     |--------------------------------------------------------------------------
     |
@@ -21,7 +45,7 @@ return [
     | automatically to list of scanned folders.
     |
     */
-    'path'  => lib_path('cubes'),
+    'path'  => lib_path('plugins'),
 
     /*
     |--------------------------------------------------------------------------
@@ -39,7 +63,7 @@ return [
             'composer'              => 'composer.json',
             'configCollection'      => 'config/configCollection.php',
             'ClassCollection'       => 'src/ClassCollection.php',
-            'LoaderCollection'      => 'src/Setup/loader.php',
+            'SetupCollection'      => 'src/Apply/Setup.php',
             'RouteServiceProvider'  => 'src/Providers/RouteServiceProvider.php',
             'AppServiceProvider'    => 'src/Providers/AppServiceProvider.php',
             'Controller'            => 'src/Http/Controllers/Controller.php',

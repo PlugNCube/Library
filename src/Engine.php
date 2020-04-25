@@ -36,7 +36,7 @@ class Engine
      */
     public static function all()
     {
-        return static::$elements;
+        return static::load();
     }
 
     /**
@@ -75,7 +75,6 @@ class Engine
      */
     public static function run(Application $app)
     {
-        static::load();
         $load = new Plugin();
         $load->setLibrary(true);
 
@@ -101,7 +100,7 @@ class Engine
     }
 
     /**
-     * Lod elements cache.
+     * Load elements cache.
      *
      * @return mixed
      */

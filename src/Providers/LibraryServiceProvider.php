@@ -27,7 +27,6 @@ class LibraryServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->registerAutoload();
         $this->registerAssets();
     }
 

@@ -54,7 +54,7 @@ class PackageLoad
 
             $item = new SplFileInfo($file);
             $data = $this->generatePackage($item);
-            $items[$data["data"]["id"]] = $data;
+            $items[$data['type'].':'.$data['name']] = $data;
         }
 
         $this->addPackages($items)->save();
@@ -71,6 +71,8 @@ class PackageLoad
     {
         $item = $file->getJsonDecode();
 
+        $merge['id']   = $item['id'];
+        $merge['name'] = $item['name'];
         $merge['type'] = $item['type'];
         $merge['data'] = $item;
         //$merge['file']['filename'] = $file->getFilename();

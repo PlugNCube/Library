@@ -1,9 +1,9 @@
 <?php
 namespace $NAMESPACE$;
 
-use Apply\Library\Plug;
+use Apply\Library\Plugin;
 
-class $PACKAGE$ extends Plug
+class $PACKAGE$ extends Plugin
 {
 
 }
