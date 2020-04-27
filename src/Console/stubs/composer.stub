@@ -11,7 +11,9 @@
             "email": "apply@creatyon.com"
         }
     ],
-    "require": {},
+    "require": {
+       "apply/library": "*",
+    },
     "autoload": {
         "psr-4": {
             "$DRIVERSPACE$\\$PACKAGE$\\": "src/"
