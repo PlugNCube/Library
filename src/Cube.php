@@ -2,7 +2,7 @@
 
 namespace Apply\Library;
 
-use Apply\Library\Support\Stub;
+use Apply\Common\Support\Stub;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
 
