@@ -6,9 +6,15 @@ use Illuminate\Support\Str;
 
 class Alias
 {
+    /**
+     * @var $cube null
+     */
     protected static $cube = null;
 
-    protected static $plug = null;
+    /**
+     * @var $plugin null
+     */
+    protected static $plugin = null;
 
     /**
      * Render Alias String
@@ -21,10 +27,10 @@ class Alias
         if (Str::contains($alias, ':')){
             $collection = Str::of($alias)->explode(':');
             static::$cube = $collection[0];
-            static::$plug = $collection[1];
+            static::$plugin = $collection[1];
         }
         else{
-            static::$plug = $alias;
+            static::$plugin = $alias;
         }
 
         return new static;
@@ -45,6 +51,6 @@ class Alias
      * @return mixed
      */
     public static function plug(){
-        return static::$plug;
+        return static::$plugin;
     }
 }

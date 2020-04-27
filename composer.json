@@ -5,7 +5,10 @@
     "license": "MIT",
     "homepage": "https://github.com/PlugNCube/Library",
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "apply/common": "*",
+        "apply/composer": "*"
+    },
     "autoload": {
         "psr-4": {
             "Apply\\Library\\": "src/"

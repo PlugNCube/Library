@@ -4,7 +4,7 @@ namespace Apply\Library;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Cache;
-use Apply\Library\Support\SplFileInfo;
+use Apply\Common\Support\SplFileInfo;
 use Symfony\Component\Finder\Finder;
 
 class PackageLoad

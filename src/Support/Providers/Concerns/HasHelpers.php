@@ -2,7 +2,7 @@
 
 namespace Apply\Library\Support\Providers\Concerns;
 
-use Apply\Library\Support\Helper;
+use Apply\Common\Support\Helper;
 
 trait HasHelpers
 {

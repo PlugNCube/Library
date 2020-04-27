@@ -4,7 +4,7 @@ namespace Apply\Library\Concerns;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
-use Apply\Library\Support\Stub;
+use Apply\Common\Support\Stub;
 
 trait HasGenerate
 {
