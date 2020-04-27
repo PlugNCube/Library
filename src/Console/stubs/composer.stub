@@ -3,6 +3,8 @@
     "description": "The Apply $PACKAGE$ Package.",
     "keywords": ["apply", "library", "$DRIVER$", "$NAME$"],
     "type": "apply",
+    "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Apply",
