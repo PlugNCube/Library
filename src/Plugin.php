@@ -140,7 +140,7 @@ class Plugin implements Arrayable, ArrayAccess, Jsonable, JsonSerializable, UrlR
     {
         $item = $package['data'];
         if (array_key_exists('alias' , $item) && $item['alias'] == null){
-            $item['alias'] = $this->alias().':'.$item['name'];
+            $item['alias'] = $item['type'].':'.$item['name'];
         }
 
         if (array_key_exists('core', $item) && $item['core']){

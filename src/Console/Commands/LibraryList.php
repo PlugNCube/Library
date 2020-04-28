@@ -27,7 +27,7 @@ class LibraryList extends Command
      */
     public function handle()
     {
-        $this->table(['Name', 'Driver', 'Status', 'Core', 'Path'], $this->getRows());
+        $this->table(['Name', 'Driver', 'alias', 'Status', 'Core', 'Path'], $this->getRows());
     }
 
     /**
@@ -43,6 +43,7 @@ class LibraryList extends Command
             $rows[] = [
                 $package->name,
                 $package->driver(),
+                $package->alias,
                 $package->active ? 'Enabled' : 'Disabled',
                 $package->core ? 'true' : 'false',
                 $package->path(),
