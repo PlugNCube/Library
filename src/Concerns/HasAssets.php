@@ -13,6 +13,6 @@ trait HasAssets
      */
     public function assets($path)
     {
-        return route('library.resource', [$this->id, $path]);
+        return route('library.assets', [$this->id, $path]);
     }
 }

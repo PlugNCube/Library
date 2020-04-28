@@ -21,7 +21,6 @@ if (! function_exists('library')) {
      */
     function library()
     {
-        app();
         return new \Apply\Library\Engine();
     }
 }
