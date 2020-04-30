@@ -78,7 +78,6 @@ class ModelMakeCommand extends GeneratorCommand
             'name' => "{$factory}Factory",
             '--model' => $this->qualifyClass($this->getNameInput()),
             '--element' => $this->option('element'),
-            '--type' => $this->option('type'),
         ]);
     }
 
@@ -99,7 +98,6 @@ class ModelMakeCommand extends GeneratorCommand
             'name' => "create_{$table}_table",
             '--create' => $table,
             '--element' => $this->option('element'),
-            '--type' => $this->option('type'),
         ]);
     }
 

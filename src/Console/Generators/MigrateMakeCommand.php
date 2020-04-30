@@ -50,7 +50,6 @@ class MigrateMakeCommand extends Command
 
         $options['--path'] = $element->strPath('database/migrations');
         $options['--path'] = ltrim($options['--path'], '/');
-
         return $this->call('make:migration', array_merge($arguments, $options));
     }
 
