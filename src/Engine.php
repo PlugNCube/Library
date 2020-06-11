@@ -88,7 +88,13 @@ class Engine
             //dd($element);
             foreach ((array)$element->composer('autoload.psr-4') as $class => $src)
             {
-                Autoload::register($class, $element->path($src));
+                if (is_array($src)){
+                    foreach ($src as $path){
+                    Autoload::register($class, $element->path($path));
+                  }
+                }else {
+                   Autoload::register($class, $element->path($src));
+              }
             }
         }
 
